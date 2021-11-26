@@ -1,0 +1,274 @@
+/*================= shared ===============*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana, sans-serif;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    float: left;
+}
+
+.four-col{
+    width: 25%;
+}
+
+.title{
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 24px;
+}
+
+.fade-line{
+    border: 1px solid #eee;
+}
+/*================= shared ===============*/
+
+
+/*================= header ===============*/
+#header{
+    background: #fff;
+    height: 55px;
+    padding: 8px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav .return-home,
+#sub-nav li a{
+    line-height: 38px;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+#sub-nav li:hover a,
+#nav .return-home:hover{
+    background: #ccc;
+}
+
+#sub-nav{
+    float: right;
+}
+
+#sub-nav li{
+    display: inline-block;
+}
+/*================= header ===============*/
+
+
+/*================= slider ===============*/
+#slider{
+    padding-top: 50%;
+    background: url('../img/buiding.jpg')
+                top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .slider-ct{
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    width: 100%;
+}
+
+#slider .logo{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+#slider .logo b{
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.7);
+    color: rgba(245, 245, 239, 0.95);
+    display: inline-block;
+    margin-right: 15px;
+}
+/*================= slider ===============*/
+
+
+/*================= content ===============*/
+#content{
+    margin: 0 32px;
+}
+
+/* project section */
+#projects-section{
+    padding: 66px 0;
+}
+
+#projects-section .project-list{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#projects-section .project-line{
+    margin: 38px 0;
+}
+
+#projects-section .project-list .project-item{
+    position: relative;
+    padding: 0 8px 16px;
+}
+
+#projects-section .project-name{
+    position: absolute;
+    top: 0;
+    left: 8px;
+    background: #000;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+#projects-section .project-img{
+    width: 100%;
+    bottom: 0;
+}
+/* project section */
+
+/* about section */
+#about-section{
+    padding: 66px 0 0;
+}
+
+#about-section .about-line{
+    margin: 20px 0;
+}
+
+#about-section .about-dct{
+    font-size: 15px;
+    text-align: justify;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+#about-section .members-list{
+    padding-top: 50px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#about-section .member-item{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#about-section .member-item .member-img{
+    display: block;
+    width: 100%;
+    filter: grayscale(70%);
+}
+
+#about-section .member-info .member-name{
+    padding: 15px 0 5px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#about-section .member-info .member-ministry{
+    font-size: 15px;
+    padding: 15px 0;
+    opacity: 0.6;
+}
+
+#about-section .member-info .member-dct{
+    font-size: 15px;
+}
+
+#about-section .member-info .contact-member-btn{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: #f1f1f1;
+    margin: 15px 0;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+#about-section .member-info .contact-member-btn:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+/* about section */
+
+/* contact section */
+#contact-section{
+    padding: 66px 0 0;
+}
+
+#contact-section .contact-intro{
+    font-size: 15px;
+    padding-bottom: 16px;
+}
+
+#contact-section .contact-line{
+    margin: 16px 0;
+}
+
+#contact-section .input-form .form-control{
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+#contact-section .input-form .send-message-btn{
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px;
+    border: none;
+    border-radius: 0;
+}
+
+#contact-section .input-form .send-message-btn:hover{
+    background: #ccc;
+    color: #000;
+}
+/* contact section */
+/*================= content ===============*/
+
+
+/*================= footer ===============*/
+#footer{
+    margin-top: 8px;
+    height: 84px;
+    background: #000;
+}
+
+#footer .license{
+    font-size: 15px;
+    padding: 33px 0;
+}
+
+#footer .license, a{
+    color: #fff;
+    text-align: center;
+}
+/*================= footer ===============*/
