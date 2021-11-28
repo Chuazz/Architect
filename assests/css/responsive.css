@@ -1,0 +1,29 @@
+/* ================= PC ==================== */
+@media (min-width: 1024px){
+
+}
+/* ================= PC ==================== */
+
+/* =============== Tablet ================== */
+@media (min-width: 740px) and (max-width: 1023px){
+    .s-two-col{
+        width: 50%;
+    }
+}
+/* =============== Tablet ================== */
+
+/* =============== Mobile ================== */
+@media (max-width: 739px){
+    .s-one-col{
+        width: 100%;
+    }
+    
+    #slider .logo{
+        display: none;
+    }
+
+    #about-section .member-info .contact-member-btn{
+        margin-bottom: 40px;
+    }
+}
+/* =============== Mobile ================== */
